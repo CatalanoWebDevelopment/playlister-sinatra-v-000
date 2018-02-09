@@ -11,7 +11,7 @@
 
   <br><br>
 
-  <label>New Genre: </label><br>
+  <label>New Genre: </label><br><br>
   <% Genre.all.each do |genre| %>
     <label><%= genre.name %></label><input type="checkbox" name="song_genre" value="genre.name">
   <% end %> 
