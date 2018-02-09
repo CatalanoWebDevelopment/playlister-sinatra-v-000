@@ -42,6 +42,8 @@ class SongsController < ApplicationController
     @song.artist = Artist.find_or_create_by(name: params[:artist][:name])
     @song.save
 
+    flash[:message] = "You have successfully updated your song"
+
   end
 
 end
