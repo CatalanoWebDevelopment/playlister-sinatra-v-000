@@ -7,3 +7,5 @@
 <h2>Artist: </h2><a href="/artists/<%= @song.artist.slug %>"><%= @song.artist.name %></a><br><br>
 
 <h2>Genre: </h2><a href="/genres/<%= @song.genres.first.slug %>"><%= @song.genres.first.name %><a/><br><br>
+
+<a href='/songs/:slug/edit'>Edit Song</a>
